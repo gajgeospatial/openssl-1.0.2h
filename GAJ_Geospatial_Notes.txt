@@ -1,0 +1,11 @@
+With the advenet of VS2015 the libeay debug win32 configuration will not build.
+This appears to be an issue in Visual Studio. Rather than to continue to waste time on this configuration
+that we are not using the realease version of the win32 libeay has been copied into the debug directory.
+
+New Version instuctions
+Create Include/openssl directory.
+1 copy Include/openssl/ .h files from previous version to Include/openssl/
+Note: These files are simply links back to the appropriate source directory in the release.
+2 copy vsbuild structure from previous release
+3 delete intermediate and target directories from copied vsbuild
+4 Use beyondcompare to anyalize any file changes and impliment

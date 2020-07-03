@@ -1,0 +1,1 @@
+This project should be installed as OPENSSL_DIR with ProjectTool.
